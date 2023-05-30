@@ -132,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlbaglantisi.cs" />
     <EmbeddedResource Include="FmGirisler.resx">
       <DependentUpon>FmGirisler.cs</DependentUpon>
     </EmbeddedResource>
