@@ -31,8 +31,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LblTC = new System.Windows.Forms.Label();
+            this.LblAdSoyad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
@@ -51,8 +51,8 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.LblAdSoyad);
+            this.groupBox1.Controls.Add(this.LblTC);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -80,23 +80,23 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Ad Soyad:";
             // 
-            // label3
+            // LblTC
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(110, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "00000000000";
+            this.LblTC.AutoSize = true;
+            this.LblTC.Location = new System.Drawing.Point(110, 41);
+            this.LblTC.Name = "LblTC";
+            this.LblTC.Size = new System.Drawing.Size(120, 23);
+            this.LblTC.TabIndex = 2;
+            this.LblTC.Text = "00000000000";
             // 
-            // label4
+            // LblAdSoyad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(110, 73);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Null Null";
+            this.LblAdSoyad.AutoSize = true;
+            this.LblAdSoyad.Location = new System.Drawing.Point(110, 73);
+            this.LblAdSoyad.Name = "LblAdSoyad";
+            this.LblAdSoyad.Size = new System.Drawing.Size(76, 23);
+            this.LblAdSoyad.TabIndex = 3;
+            this.LblAdSoyad.Text = "Null Null";
             // 
             // groupBox2
             // 
@@ -212,8 +212,8 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LblAdSoyad;
+        private System.Windows.Forms.Label LblTC;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;

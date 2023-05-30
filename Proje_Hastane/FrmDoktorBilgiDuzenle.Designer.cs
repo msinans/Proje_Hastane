@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.CmbBrans = new System.Windows.Forms.ComboBox();
             this.TxtSifre = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.BtnBilgiGuncelle = new System.Windows.Forms.Button();
@@ -100,13 +100,13 @@
             this.label2.TabIndex = 31;
             this.label2.Text = "TC Kimlik No:";
             // 
-            // comboBox1
+            // CmbBrans
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(127, 145);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 31);
-            this.comboBox1.TabIndex = 38;
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Location = new System.Drawing.Point(127, 145);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(171, 31);
+            this.CmbBrans.TabIndex = 38;
             // 
             // TxtSifre
             // 
@@ -143,7 +143,7 @@
             this.Controls.Add(this.BtnBilgiGuncelle);
             this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.CmbBrans);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.TxtSoyad);
             this.Controls.Add(this.label4);
@@ -169,7 +169,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MaskedTextBox MskTC;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CmbBrans;
         private System.Windows.Forms.TextBox TxtSifre;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BtnBilgiGuncelle;
