@@ -156,6 +156,7 @@
             this.BtnKayitYap.TabIndex = 7;
             this.BtnKayitYap.Text = "Kaydet";
             this.BtnKayitYap.UseVisualStyleBackColor = false;
+            this.BtnKayitYap.Click += new System.EventHandler(this.BtnKayitYap_Click);
             // 
             // FrmHastaKayit
             // 
