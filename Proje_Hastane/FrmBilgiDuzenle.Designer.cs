@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBilgiDuzenle));
             this.BtnBilgiGuncelle = new System.Windows.Forms.Button();
             this.CmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.MskTelefon = new System.Windows.Forms.MaskedTextBox();
@@ -52,6 +53,7 @@
             this.BtnBilgiGuncelle.TabIndex = 32;
             this.BtnBilgiGuncelle.Text = "Güncelle";
             this.BtnBilgiGuncelle.UseVisualStyleBackColor = false;
+            this.BtnBilgiGuncelle.Click += new System.EventHandler(this.BtnBilgiGuncelle_Click);
             // 
             // CmbCinsiyet
             // 
@@ -160,8 +162,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(393, 325);
+            this.ClientSize = new System.Drawing.Size(354, 314);
             this.Controls.Add(this.BtnBilgiGuncelle);
             this.Controls.Add(this.CmbCinsiyet);
             this.Controls.Add(this.MskTelefon);
@@ -176,9 +179,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmBilgiDuzenle";
-            this.Text = "FrmBilgiDuzenle";
+            this.Text = "Bilgi Güncelleme";
+            this.Load += new System.EventHandler(this.FrmBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
