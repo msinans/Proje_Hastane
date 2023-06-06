@@ -21,7 +21,7 @@ namespace Proje_Hastane
         sqlbaglantisi bgl = new sqlbaglantisi();
         private void FrmHastaDetay_Load(object sender, EventArgs e)
         {
-            LblTC.Text = tc;
+            LblTC.Text = tc; // Bu tc yi LblTC ye yazdıralım. // Bu tc değişkenini taşımak için FrmHastaGiris formuna fr.Show(); dan önce fr.tc = MskTC.Text; yazıyorum. 
 
             // Ad Soyad Çekme
             SqlCommand komut = new SqlCommand("Select HastaAd, HastaSoyad From Tbl_Hastalar Where HastaTC=@p1", bgl.baglanti()); // HastaTC si @p1 deki değeri eşit olan satırın ad soyadını getir.
@@ -50,6 +50,33 @@ namespace Proje_Hastane
             }
             bgl.baglanti().Close();
 
+        }
+
+        private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CmbDoktor.Items.Clear(); // Önce comboBox ın içini temizlesin yoksa her branş seçtiğimde önceki branşın doktoru orada kalıyor.
+            SqlCommand komut3 = new SqlCommand("Select DoktorAd, DoktorSoyad From Tbl_Doktorlar Where DoktorBrans=@p1", bgl.baglanti()); 
+            komut3.Parameters.AddWithValue("@p1", CmbBrans.Text); // @p1 parametresinde alacağı değere göre doktorların ad soyadlarını getir.
+            SqlDataReader dr3 = komut3.ExecuteReader();
+            while (dr3.Read())
+            {
+                CmbDoktor.Items.Add(dr3[0] + " " + dr3[1]);
+            }
+            bgl.baglanti().Close();
+        }
+
+        private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where RandevuBrans = ' " + CmbBrans.Text + " ' ", bgl.baglanti());
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+        }
+
+        private void LnkBilgiDuzenle_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmBilgiDuzenle fr = new FrmBilgiDuzenle();
+            fr.Show();
         }
     }
 }

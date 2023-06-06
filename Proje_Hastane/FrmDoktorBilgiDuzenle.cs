@@ -15,6 +15,6 @@ namespace Proje_Hastane
         public FrmDoktorBilgiDuzenle()
         {
             InitializeComponent();
-        }
+        }        
     }
 }
