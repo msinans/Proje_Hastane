@@ -34,32 +34,32 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.BtnDuyuruOlustur = new System.Windows.Forms.Button();
+            this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.ChkDurum = new System.Windows.Forms.CheckBox();
-            this.TxtAd = new System.Windows.Forms.TextBox();
-            this.MskTarih = new System.Windows.Forms.MaskedTextBox();
-            this.MskSaat = new System.Windows.Forms.MaskedTextBox();
-            this.CmbBrans = new System.Windows.Forms.ComboBox();
-            this.CmbDoktor = new System.Windows.Forms.ComboBox();
-            this.MskTC = new System.Windows.Forms.MaskedTextBox();
-            this.BtnKaydet = new System.Windows.Forms.Button();
             this.BtnGuncelle = new System.Windows.Forms.Button();
+            this.BtnKaydet = new System.Windows.Forms.Button();
+            this.MskTC = new System.Windows.Forms.MaskedTextBox();
+            this.CmbDoktor = new System.Windows.Forms.ComboBox();
+            this.CmbBrans = new System.Windows.Forms.ComboBox();
+            this.MskSaat = new System.Windows.Forms.MaskedTextBox();
+            this.MskTarih = new System.Windows.Forms.MaskedTextBox();
+            this.TxtAd = new System.Windows.Forms.TextBox();
+            this.ChkDurum = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.BtnDoktorPanel = new System.Windows.Forms.Button();
-            this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnListe = new System.Windows.Forms.Button();
+            this.BtnBransPanel = new System.Windows.Forms.Button();
+            this.BtnDoktorPanel = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -130,14 +130,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Duyuru Oluştur";
             // 
-            // RchDuyuru
-            // 
-            this.RchDuyuru.Location = new System.Drawing.Point(6, 30);
-            this.RchDuyuru.Name = "RchDuyuru";
-            this.RchDuyuru.Size = new System.Drawing.Size(237, 145);
-            this.RchDuyuru.TabIndex = 0;
-            this.RchDuyuru.Text = "";
-            // 
             // BtnDuyuruOlustur
             // 
             this.BtnDuyuruOlustur.Location = new System.Drawing.Point(6, 189);
@@ -146,6 +138,14 @@
             this.BtnDuyuruOlustur.TabIndex = 1;
             this.BtnDuyuruOlustur.Text = "Oluştur";
             this.BtnDuyuruOlustur.UseVisualStyleBackColor = true;
+            // 
+            // RchDuyuru
+            // 
+            this.RchDuyuru.Location = new System.Drawing.Point(6, 30);
+            this.RchDuyuru.Name = "RchDuyuru";
+            this.RchDuyuru.Size = new System.Drawing.Size(237, 145);
+            this.RchDuyuru.TabIndex = 0;
+            this.RchDuyuru.Text = "";
             // 
             // groupBox3
             // 
@@ -171,59 +171,73 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
             // 
-            // label3
+            // BtnGuncelle
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(54, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 23);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "id:";
+            this.BtnGuncelle.Location = new System.Drawing.Point(89, 327);
+            this.BtnGuncelle.Name = "BtnGuncelle";
+            this.BtnGuncelle.Size = new System.Drawing.Size(121, 31);
+            this.BtnGuncelle.TabIndex = 15;
+            this.BtnGuncelle.Text = "Güncelle";
+            this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // BtnKaydet
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(29, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 23);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Tarih:";
+            this.BtnKaydet.Location = new System.Drawing.Point(89, 288);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(121, 31);
+            this.BtnKaydet.TabIndex = 14;
+            this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // MskTC
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(33, 110);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 23);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Saat:";
+            this.MskTC.Location = new System.Drawing.Point(89, 218);
+            this.MskTC.Mask = "00000000000";
+            this.MskTC.Name = "MskTC";
+            this.MskTC.Size = new System.Drawing.Size(121, 31);
+            this.MskTC.TabIndex = 13;
+            this.MskTC.ValidatingType = typeof(int);
             // 
-            // label6
+            // CmbDoktor
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(24, 147);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 23);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Branş:";
+            this.CmbDoktor.FormattingEnabled = true;
+            this.CmbDoktor.Location = new System.Drawing.Point(89, 181);
+            this.CmbDoktor.Name = "CmbDoktor";
+            this.CmbDoktor.Size = new System.Drawing.Size(121, 31);
+            this.CmbDoktor.TabIndex = 12;
             // 
-            // label7
+            // CmbBrans
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 184);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 23);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Doktor:";
+            this.CmbBrans.FormattingEnabled = true;
+            this.CmbBrans.Location = new System.Drawing.Point(89, 144);
+            this.CmbBrans.Name = "CmbBrans";
+            this.CmbBrans.Size = new System.Drawing.Size(121, 31);
+            this.CmbBrans.TabIndex = 11;
             // 
-            // label8
+            // MskSaat
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(19, 221);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(64, 23);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "TC No:";
+            this.MskSaat.Location = new System.Drawing.Point(89, 107);
+            this.MskSaat.Mask = "00:00";
+            this.MskSaat.Name = "MskSaat";
+            this.MskSaat.Size = new System.Drawing.Size(121, 31);
+            this.MskSaat.TabIndex = 10;
+            this.MskSaat.ValidatingType = typeof(System.DateTime);
+            // 
+            // MskTarih
+            // 
+            this.MskTarih.Location = new System.Drawing.Point(89, 70);
+            this.MskTarih.Mask = "00/00/0000";
+            this.MskTarih.Name = "MskTarih";
+            this.MskTarih.Size = new System.Drawing.Size(121, 31);
+            this.MskTarih.TabIndex = 9;
+            this.MskTarih.ValidatingType = typeof(System.DateTime);
+            // 
+            // TxtAd
+            // 
+            this.TxtAd.Location = new System.Drawing.Point(89, 33);
+            this.TxtAd.Name = "TxtAd";
+            this.TxtAd.Size = new System.Drawing.Size(121, 31);
+            this.TxtAd.TabIndex = 8;
             // 
             // ChkDurum
             // 
@@ -235,73 +249,59 @@
             this.ChkDurum.Text = "Durum";
             this.ChkDurum.UseVisualStyleBackColor = true;
             // 
-            // TxtAd
+            // label8
             // 
-            this.TxtAd.Location = new System.Drawing.Point(89, 33);
-            this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(121, 31);
-            this.TxtAd.TabIndex = 8;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(19, 221);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 23);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "TC No:";
             // 
-            // MskTarih
+            // label7
             // 
-            this.MskTarih.Location = new System.Drawing.Point(89, 70);
-            this.MskTarih.Mask = "00/00/0000";
-            this.MskTarih.Name = "MskTarih";
-            this.MskTarih.Size = new System.Drawing.Size(121, 31);
-            this.MskTarih.TabIndex = 9;
-            this.MskTarih.ValidatingType = typeof(System.DateTime);
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 184);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(70, 23);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Doktor:";
             // 
-            // MskSaat
+            // label6
             // 
-            this.MskSaat.Location = new System.Drawing.Point(89, 107);
-            this.MskSaat.Mask = "00:00";
-            this.MskSaat.Name = "MskSaat";
-            this.MskSaat.Size = new System.Drawing.Size(121, 31);
-            this.MskSaat.TabIndex = 10;
-            this.MskSaat.ValidatingType = typeof(System.DateTime);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(24, 147);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 23);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Branş:";
             // 
-            // CmbBrans
+            // label5
             // 
-            this.CmbBrans.FormattingEnabled = true;
-            this.CmbBrans.Location = new System.Drawing.Point(89, 144);
-            this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(121, 31);
-            this.CmbBrans.TabIndex = 11;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(33, 110);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(50, 23);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Saat:";
             // 
-            // CmbDoktor
+            // label4
             // 
-            this.CmbDoktor.FormattingEnabled = true;
-            this.CmbDoktor.Location = new System.Drawing.Point(89, 181);
-            this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(121, 31);
-            this.CmbDoktor.TabIndex = 12;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(29, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(54, 23);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Tarih:";
             // 
-            // MskTC
+            // label3
             // 
-            this.MskTC.Location = new System.Drawing.Point(89, 218);
-            this.MskTC.Mask = "00000000000";
-            this.MskTC.Name = "MskTC";
-            this.MskTC.Size = new System.Drawing.Size(121, 31);
-            this.MskTC.TabIndex = 13;
-            this.MskTC.ValidatingType = typeof(int);
-            // 
-            // BtnKaydet
-            // 
-            this.BtnKaydet.Location = new System.Drawing.Point(89, 288);
-            this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(121, 31);
-            this.BtnKaydet.TabIndex = 14;
-            this.BtnKaydet.Text = "Kaydet";
-            this.BtnKaydet.UseVisualStyleBackColor = true;
-            // 
-            // BtnGuncelle
-            // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(89, 327);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(121, 31);
-            this.BtnGuncelle.TabIndex = 15;
-            this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(54, 41);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 23);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "id:";
             // 
             // groupBox4
             // 
@@ -353,14 +353,14 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hızlı Erişim";
             // 
-            // BtnDoktorPanel
+            // BtnListe
             // 
-            this.BtnDoktorPanel.Location = new System.Drawing.Point(16, 53);
-            this.BtnDoktorPanel.Name = "BtnDoktorPanel";
-            this.BtnDoktorPanel.Size = new System.Drawing.Size(127, 31);
-            this.BtnDoktorPanel.TabIndex = 15;
-            this.BtnDoktorPanel.Text = "Doktor Paneli";
-            this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            this.BtnListe.Location = new System.Drawing.Point(335, 53);
+            this.BtnListe.Name = "BtnListe";
+            this.BtnListe.Size = new System.Drawing.Size(130, 31);
+            this.BtnListe.TabIndex = 17;
+            this.BtnListe.Text = "Randevu Liste";
+            this.BtnListe.UseVisualStyleBackColor = true;
             // 
             // BtnBransPanel
             // 
@@ -371,14 +371,14 @@
             this.BtnBransPanel.Text = "Branş Paneli";
             this.BtnBransPanel.UseVisualStyleBackColor = true;
             // 
-            // BtnListe
+            // BtnDoktorPanel
             // 
-            this.BtnListe.Location = new System.Drawing.Point(335, 53);
-            this.BtnListe.Name = "BtnListe";
-            this.BtnListe.Size = new System.Drawing.Size(130, 31);
-            this.BtnListe.TabIndex = 17;
-            this.BtnListe.Text = "Randevu Liste";
-            this.BtnListe.UseVisualStyleBackColor = true;
+            this.BtnDoktorPanel.Location = new System.Drawing.Point(16, 53);
+            this.BtnDoktorPanel.Name = "BtnDoktorPanel";
+            this.BtnDoktorPanel.Size = new System.Drawing.Size(127, 31);
+            this.BtnDoktorPanel.TabIndex = 15;
+            this.BtnDoktorPanel.Text = "Doktor Paneli";
+            this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             // 
             // FrmSekreterDetay
             // 
@@ -393,9 +393,10 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FrmSekreterDetay";
             this.Text = "FrmSekreterDetay";
+            this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
