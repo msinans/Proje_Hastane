@@ -22,6 +22,9 @@ namespace Proje_Hastane
         private void FrmSekreterDetay_Load(object sender, EventArgs e)
         {
             LblTC.Text = TCnumara;
+
+            // Ad Soyad
         }
+
     }
 }
