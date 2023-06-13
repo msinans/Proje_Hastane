@@ -44,9 +44,30 @@ namespace Proje_Hastane
             SqlDataAdapter da2 = new SqlDataAdapter("Select (DoktorAd + ' ' + DoktorSoyad) as 'Doktorlar', DoktorBrans  From Tbl_Doktorlar", bgl.baglanti());
             da2.Fill(dt2);
             dataGridView2.DataSource = dt2;
+
+            //Branşı ComboBoxa Aktarma
+            SqlCommand komut2 = new SqlCommand("Select BransAd From Tbl_Branslar", bgl.baglanti());
+            SqlDataReader dr2 = komut2.ExecuteReader();
+            while (dr2.Read())
+            {
+                CmbBrans.Items.Add(dr2[0]);
+            }
+            bgl.baglanti().Close();
         }
 
         private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            SqlCommand komutkaydet = new SqlCommand("Insert Into Tbl_Randevular (RandevuTarih, RandevuSaat, RandevuBrans, RandevuDoktor) values (@r1,@r2,@r3,@r4)", bgl.baglanti());
+            komutkaydet.Parameters.AddWithValue("@r1", MskTarih.Text);
+            komutkaydet.Parameters.AddWithValue("@r2", MskSaat.Text);
+            komutkaydet.Parameters.AddWithValue("@r3", CmbBrans.Text);
+            komutkaydet.Parameters.AddWithValue("@r4", CmbDoktor.Text);
+            komutkaydet.ExecuteNonQuery();
+            bgl.baglanti();
+            MessageBox.Show("Randevunuz Oluşturuldu");
+        }
+
+        private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

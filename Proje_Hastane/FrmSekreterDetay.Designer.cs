@@ -176,7 +176,7 @@
             // 
             this.BtnGuncelle.Location = new System.Drawing.Point(89, 338);
             this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(121, 31);
+            this.BtnGuncelle.Size = new System.Drawing.Size(150, 31);
             this.BtnGuncelle.TabIndex = 15;
             this.BtnGuncelle.Text = "Güncelle";
             this.BtnGuncelle.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             // 
             this.BtnKaydet.Location = new System.Drawing.Point(89, 301);
             this.BtnKaydet.Name = "BtnKaydet";
-            this.BtnKaydet.Size = new System.Drawing.Size(121, 31);
+            this.BtnKaydet.Size = new System.Drawing.Size(150, 31);
             this.BtnKaydet.TabIndex = 14;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
@@ -196,32 +196,35 @@
             this.MskTC.Location = new System.Drawing.Point(89, 218);
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
-            this.MskTC.Size = new System.Drawing.Size(121, 31);
+            this.MskTC.Size = new System.Drawing.Size(150, 31);
             this.MskTC.TabIndex = 13;
             this.MskTC.ValidatingType = typeof(int);
             // 
             // CmbDoktor
             // 
+            this.CmbDoktor.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbDoktor.FormattingEnabled = true;
             this.CmbDoktor.Location = new System.Drawing.Point(89, 181);
             this.CmbDoktor.Name = "CmbDoktor";
-            this.CmbDoktor.Size = new System.Drawing.Size(121, 31);
+            this.CmbDoktor.Size = new System.Drawing.Size(150, 27);
             this.CmbDoktor.TabIndex = 12;
             // 
             // CmbBrans
             // 
+            this.CmbBrans.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.CmbBrans.FormattingEnabled = true;
             this.CmbBrans.Location = new System.Drawing.Point(89, 144);
             this.CmbBrans.Name = "CmbBrans";
-            this.CmbBrans.Size = new System.Drawing.Size(121, 31);
+            this.CmbBrans.Size = new System.Drawing.Size(150, 27);
             this.CmbBrans.TabIndex = 11;
+            this.CmbBrans.SelectedIndexChanged += new System.EventHandler(this.CmbBrans_SelectedIndexChanged);
             // 
             // MskSaat
             // 
             this.MskSaat.Location = new System.Drawing.Point(89, 107);
             this.MskSaat.Mask = "00:00";
             this.MskSaat.Name = "MskSaat";
-            this.MskSaat.Size = new System.Drawing.Size(121, 31);
+            this.MskSaat.Size = new System.Drawing.Size(150, 31);
             this.MskSaat.TabIndex = 10;
             this.MskSaat.ValidatingType = typeof(System.DateTime);
             // 
@@ -230,7 +233,7 @@
             this.MskTarih.Location = new System.Drawing.Point(89, 70);
             this.MskTarih.Mask = "00/00/0000";
             this.MskTarih.Name = "MskTarih";
-            this.MskTarih.Size = new System.Drawing.Size(121, 31);
+            this.MskTarih.Size = new System.Drawing.Size(150, 31);
             this.MskTarih.TabIndex = 9;
             this.MskTarih.ValidatingType = typeof(System.DateTime);
             // 
@@ -238,7 +241,7 @@
             // 
             this.TxtAd.Location = new System.Drawing.Point(89, 33);
             this.TxtAd.Name = "TxtAd";
-            this.TxtAd.Size = new System.Drawing.Size(121, 31);
+            this.TxtAd.Size = new System.Drawing.Size(150, 31);
             this.TxtAd.TabIndex = 8;
             // 
             // ChkDurum
