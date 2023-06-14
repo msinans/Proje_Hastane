@@ -63,13 +63,32 @@ namespace Proje_Hastane
             komutkaydet.Parameters.AddWithValue("@r3", CmbBrans.Text);
             komutkaydet.Parameters.AddWithValue("@r4", CmbDoktor.Text);
             komutkaydet.ExecuteNonQuery();
-            bgl.baglanti();
+            bgl.baglanti().Close();
             MessageBox.Show("Randevunuz Oluşturuldu");
         }
 
         private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
+            CmbDoktor.Items.Clear();
+            SqlCommand komut = new SqlCommand("Select DoktorAd, DoktorSoyad From Tbl_Doktorlar Where DoktorBrans = @p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", CmbBrans.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                CmbDoktor.Items.Add(dr[0] + " " + dr[1]);
+            }
+            bgl.baglanti().Close();
+           
+                
+        }
 
+        private void BtnDuyuruOlustur_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Insert Into Tbl_Duyurular (Duyuru) values (@d1)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1", RchDuyuru.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Duyuru Oluşturuldu");
         }
     }
 }
