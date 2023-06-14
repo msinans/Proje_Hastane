@@ -390,6 +390,7 @@
             this.BtnDoktorPanel.TabIndex = 15;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
+            this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
             // FrmSekreterDetay
             // 
