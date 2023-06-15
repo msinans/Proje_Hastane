@@ -50,5 +50,13 @@ namespace Proje_Hastane
             TxtSifre.Text = dataGridView1.Rows[secilen].Cells[5].Value.ToString();
 
         }
+
+        private void BtnSil_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Delete From Tbl_Doktorlar Where DoktorTC=@p1", bgl.baglanti());
+            komut.Parameters.AddWithValue("@p1", MskTC.Text);
+            komut.ExecuteNonQuery();
+            MessageBox.Show("Kayıt Silindi!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
     }
 }

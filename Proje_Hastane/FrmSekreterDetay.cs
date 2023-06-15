@@ -21,6 +21,8 @@ namespace Proje_Hastane
         sqlbaglantisi bgl = new sqlbaglantisi();
         private void FrmSekreterDetay_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'hastaneProjeDataSet.Tbl_Branslar' table. You can move, or remove it, as needed.
+            this.tbl_BranslarTableAdapter.Fill(this.hastaneProjeDataSet.Tbl_Branslar);
             LblTC.Text = TCnumara;
 
             // Ad Soyad

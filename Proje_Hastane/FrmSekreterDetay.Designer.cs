@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSekreterDetay));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.LblAdSoyad = new System.Windows.Forms.Label();
@@ -61,6 +62,9 @@
             this.BtnListe = new System.Windows.Forms.Button();
             this.BtnBransPanel = new System.Windows.Forms.Button();
             this.BtnDoktorPanel = new System.Windows.Forms.Button();
+            this.hastaneProjeDataSet = new Proje_Hastane.HastaneProjeDataSet();
+            this.tblBranslarBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_BranslarTableAdapter = new Proje_Hastane.HastaneProjeDataSetTableAdapters.Tbl_BranslarTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -69,6 +73,8 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblBranslarBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -392,6 +398,20 @@
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
             this.BtnDoktorPanel.Click += new System.EventHandler(this.BtnDoktorPanel_Click);
             // 
+            // hastaneProjeDataSet
+            // 
+            this.hastaneProjeDataSet.DataSetName = "HastaneProjeDataSet";
+            this.hastaneProjeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblBranslarBindingSource
+            // 
+            this.tblBranslarBindingSource.DataMember = "Tbl_Branslar";
+            this.tblBranslarBindingSource.DataSource = this.hastaneProjeDataSet;
+            // 
+            // tbl_BranslarTableAdapter
+            // 
+            this.tbl_BranslarTableAdapter.ClearBeforeFill = true;
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -422,6 +442,8 @@
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hastaneProjeDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblBranslarBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -460,5 +482,8 @@
         private System.Windows.Forms.Button BtnListe;
         private System.Windows.Forms.Button BtnBransPanel;
         private System.Windows.Forms.Button BtnDoktorPanel;
+        private HastaneProjeDataSet hastaneProjeDataSet;
+        private System.Windows.Forms.BindingSource tblBranslarBindingSource;
+        private HastaneProjeDataSetTableAdapters.Tbl_BranslarTableAdapter tbl_BranslarTableAdapter;
     }
 }

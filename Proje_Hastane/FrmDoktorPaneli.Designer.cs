@@ -166,6 +166,7 @@
             this.BtnSil.TabIndex = 56;
             this.BtnSil.Text = "Sil";
             this.BtnSil.UseVisualStyleBackColor = false;
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // dataGridView1
             // 
