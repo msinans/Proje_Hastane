@@ -58,5 +58,18 @@ namespace Proje_Hastane
             komut.ExecuteNonQuery();
             MessageBox.Show("Kayıt Silindi!", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
+
+        private void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update Tbl_Doktorlar Set DoktorAd=@d1, DoktorSoyad=@d2, DoktorBrans=@d3, DoktorSifre=@d5 Where DoktorTC=@d4", bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1", TxtAd.Text);
+            komut.Parameters.AddWithValue("@d2", TxtSoyad.Text);
+            komut.Parameters.AddWithValue("@d3", CmbBrans.Text);
+            komut.Parameters.AddWithValue("@d4", MskTC.Text);
+            komut.Parameters.AddWithValue("@d5", TxtSifre.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Kayıt Güncellendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
