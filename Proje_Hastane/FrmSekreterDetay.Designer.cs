@@ -39,7 +39,6 @@
             this.BtnDuyuruOlustur = new System.Windows.Forms.Button();
             this.RchDuyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnKaydet = new System.Windows.Forms.Button();
             this.MskTC = new System.Windows.Forms.MaskedTextBox();
             this.CmbDoktor = new System.Windows.Forms.ComboBox();
@@ -65,6 +64,7 @@
             this.hastaneProjeDataSet = new Proje_Hastane.HastaneProjeDataSet();
             this.tblBranslarBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_BranslarTableAdapter = new Proje_Hastane.HastaneProjeDataSetTableAdapters.Tbl_BranslarTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -157,7 +157,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.BtnGuncelle);
             this.groupBox3.Controls.Add(this.BtnKaydet);
             this.groupBox3.Controls.Add(this.MskTC);
             this.groupBox3.Controls.Add(this.CmbDoktor);
@@ -178,15 +177,6 @@
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
-            // 
-            // BtnGuncelle
-            // 
-            this.BtnGuncelle.Location = new System.Drawing.Point(89, 338);
-            this.BtnGuncelle.Name = "BtnGuncelle";
-            this.BtnGuncelle.Size = new System.Drawing.Size(150, 31);
-            this.BtnGuncelle.TabIndex = 15;
-            this.BtnGuncelle.Text = "Güncelle";
-            this.BtnGuncelle.UseVisualStyleBackColor = true;
             // 
             // BtnKaydet
             // 
@@ -360,9 +350,10 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.BtnListe);
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.BtnBransPanel);
             this.groupBox6.Controls.Add(this.BtnDoktorPanel);
+            this.groupBox6.Controls.Add(this.BtnListe);
             this.groupBox6.Location = new System.Drawing.Point(15, 407);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(500, 93);
@@ -372,9 +363,9 @@
             // 
             // BtnListe
             // 
-            this.BtnListe.Location = new System.Drawing.Point(339, 41);
+            this.BtnListe.Location = new System.Drawing.Point(252, 43);
             this.BtnListe.Name = "BtnListe";
-            this.BtnListe.Size = new System.Drawing.Size(130, 31);
+            this.BtnListe.Size = new System.Drawing.Size(100, 31);
             this.BtnListe.TabIndex = 17;
             this.BtnListe.Text = "Randevu Liste";
             this.BtnListe.UseVisualStyleBackColor = true;
@@ -382,9 +373,9 @@
             // 
             // BtnBransPanel
             // 
-            this.BtnBransPanel.Location = new System.Drawing.Point(186, 41);
+            this.BtnBransPanel.Location = new System.Drawing.Point(136, 43);
             this.BtnBransPanel.Name = "BtnBransPanel";
-            this.BtnBransPanel.Size = new System.Drawing.Size(121, 31);
+            this.BtnBransPanel.Size = new System.Drawing.Size(91, 31);
             this.BtnBransPanel.TabIndex = 16;
             this.BtnBransPanel.Text = "Branş Paneli";
             this.BtnBransPanel.UseVisualStyleBackColor = true;
@@ -392,9 +383,9 @@
             // 
             // BtnDoktorPanel
             // 
-            this.BtnDoktorPanel.Location = new System.Drawing.Point(20, 41);
+            this.BtnDoktorPanel.Location = new System.Drawing.Point(23, 43);
             this.BtnDoktorPanel.Name = "BtnDoktorPanel";
-            this.BtnDoktorPanel.Size = new System.Drawing.Size(127, 31);
+            this.BtnDoktorPanel.Size = new System.Drawing.Size(91, 31);
             this.BtnDoktorPanel.TabIndex = 15;
             this.BtnDoktorPanel.Text = "Doktor Paneli";
             this.BtnDoktorPanel.UseVisualStyleBackColor = true;
@@ -414,6 +405,16 @@
             // 
             this.tbl_BranslarTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(374, 43);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(100, 31);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Duyurular";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
@@ -432,7 +433,7 @@
             this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.Name = "FrmSekreterDetay";
-            this.Text = "FrmSekreterDetay";
+            this.Text = "Sekreter Detay";
             this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -474,7 +475,6 @@
         private System.Windows.Forms.MaskedTextBox MskSaat;
         private System.Windows.Forms.MaskedTextBox MskTarih;
         private System.Windows.Forms.TextBox TxtAd;
-        private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnKaydet;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -487,5 +487,6 @@
         private HastaneProjeDataSet hastaneProjeDataSet;
         private System.Windows.Forms.BindingSource tblBranslarBindingSource;
         private HastaneProjeDataSetTableAdapters.Tbl_BranslarTableAdapter tbl_BranslarTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }
