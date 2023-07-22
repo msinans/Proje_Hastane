@@ -55,6 +55,7 @@ namespace Proje_Hastane
         private void CmbBrans_SelectedIndexChanged(object sender, EventArgs e)
         {
             CmbDoktor.Items.Clear(); // Önce comboBox ın içini temizlesin yoksa her branş seçtiğimde önceki branşın doktoru orada kalıyor.
+
             SqlCommand komut3 = new SqlCommand("Select DoktorAd, DoktorSoyad From Tbl_Doktorlar Where DoktorBrans=@p1", bgl.baglanti()); 
             komut3.Parameters.AddWithValue("@p1", CmbBrans.Text); // @p1 parametresinde alacağı değere göre doktorların ad soyadlarını getir.
             SqlDataReader dr3 = komut3.ExecuteReader();
@@ -68,7 +69,7 @@ namespace Proje_Hastane
         private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where RandevuBrans = ' " + CmbBrans.Text + " ' ", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where RandevuBrans = ' " + CmbBrans.Text + " ' " + " and RandevuDoktor ='" + CmbDoktor.Text + "'", bgl.baglanti());
             da.Fill(dt);
             dataGridView2.DataSource = dt;
         }
