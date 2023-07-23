@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Script", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(101, 25);
+            this.label1.Location = new System.Drawing.Point(56, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 48);
             this.label1.TabIndex = 0;
@@ -111,7 +111,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(432, 273);
+            this.ClientSize = new System.Drawing.Size(421, 238);
             this.Controls.Add(this.BtnGirisYap);
             this.Controls.Add(this.TxtSifre);
             this.Controls.Add(this.MskTC);
