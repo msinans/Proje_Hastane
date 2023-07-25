@@ -143,7 +143,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.MaximizeBox = false;
             this.Name = "FmGirisler";
-            this.Text = "Özel ZÜhal Hastanesi Giriş";
+            this.Text = "Özel Zühal Hastanesi Giriş";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
