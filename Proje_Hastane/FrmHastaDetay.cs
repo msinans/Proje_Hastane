@@ -69,7 +69,7 @@ namespace Proje_Hastane
         private void CmbDoktor_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where RandevuBrans = '" + CmbBrans.Text + "'" + " and RandevuDoktor ='" + CmbDoktor.Text + "' and RandevuDurum=0", bgl.baglanti());
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular Where RandevuBrans = '" + CmbBrans.Text + "' and RandevuDoktor ='" + CmbDoktor.Text + "' and RandevuDurum=0", bgl.baglanti());
             da.Fill(dt);
             dataGridView2.DataSource = dt;
         }
