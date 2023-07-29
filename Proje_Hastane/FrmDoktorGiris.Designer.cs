@@ -57,12 +57,13 @@
             // 
             // BtnGirisYap
             // 
-            this.BtnGirisYap.Location = new System.Drawing.Point(237, 201);
+            this.BtnGirisYap.Location = new System.Drawing.Point(228, 201);
             this.BtnGirisYap.Name = "BtnGirisYap";
-            this.BtnGirisYap.Size = new System.Drawing.Size(87, 34);
+            this.BtnGirisYap.Size = new System.Drawing.Size(96, 31);
             this.BtnGirisYap.TabIndex = 12;
-            this.BtnGirisYap.Text = "Giriş";
+            this.BtnGirisYap.Text = "Giriş Yap";
             this.BtnGirisYap.UseVisualStyleBackColor = true;
+            this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
             // 
             // TxtSifre
             // 
@@ -70,6 +71,8 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(171, 31);
             this.TxtSifre.TabIndex = 11;
+            this.TxtSifre.Text = "1323";
+            this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
             // 
@@ -78,6 +81,7 @@
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(171, 31);
             this.MskTC.TabIndex = 10;
+            this.MskTC.Text = "13889803358";
             this.MskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -110,6 +114,7 @@
             // 
             // FrmDoktorGiris
             // 
+            this.AcceptButton = this.BtnGirisYap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -118,6 +123,7 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDoktorGiris";
             this.Text = "Doktor Giriş";
