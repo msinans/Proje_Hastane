@@ -71,7 +71,7 @@
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Size = new System.Drawing.Size(171, 31);
             this.TxtSifre.TabIndex = 11;
-            this.TxtSifre.Text = "1323";
+            this.TxtSifre.Text = "1111";
             this.TxtSifre.UseSystemPasswordChar = true;
             // 
             // MskTC
